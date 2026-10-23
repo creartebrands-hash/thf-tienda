@@ -1,0 +1,48 @@
+# THF · Cloudflare Workers (plan gratuito). Guía completa en README.md
+name = "thf"
+main = "src/index.js"
+compatibility_date = "2025-09-01"
+workers_dev = true
+
+# Sitio, tienda, API y panel en un solo Worker. Los archivos de /public (CSS, JS, fotos iniciales) se sirven gratis.
+[assets]
+directory = "./public"
+binding = "ASSETS"
+not_found_handling = "none"
+# Los PDF de /files no se sirven directo: pasan por el Worker (que los entrega solo con enlace que vence)
+run_worker_first = ["/files/*"]
+
+# Base de datos (D1). Crea la base con:  npx wrangler d1 create thf-db   y pega aquí el database_id que te devuelve.
+[[d1_databases]]
+binding = "DB"
+database_name = "thf-db"
+database_id = "PEGA-AQUI-EL-ID-DE-TU-BASE-D1"
+
+# Fotos, videos y ebooks que subes desde el panel (Workers KV, gratis y sin tarjeta).
+# Crea el espacio con:  npx wrangler kv namespace create FILES   y pega aquí el id.
+[[kv_namespaces]]
+binding = "FILES"
+id = "PEGA-AQUI-EL-ID-DE-TU-KV"
+
+# Opcional: R2 (10 GB gratis, pero Cloudflare pide registrar una tarjeta). Si lo activas, se usa en lugar de KV.
+# [[r2_buckets]]
+# binding = "MEDIA"
+# bucket_name = "thf-media"
+
+[vars]
+# Tu dominio final, sin barra al final (ej. https://tudominio.com). Vacío = usa la dirección con la que se visita el sitio.
+# Se usa para enlaces canónicos, sitemap y datos para Google: complétalo cuando conectes el dominio.
+SITE_URL = ""
+ASSET_VERSION = "4"
+ADMIN_IDLE_MIN = "60"
+ADMIN_ABS_HOURS = "12"
+# Opcional: clave pública de Turnstile (captcha gratis de Cloudflare)
+# TURNSTILE_SITEKEY = ""
+
+# Secretos (NO van en este archivo). Créalos con:
+#   npx wrangler secret put THF_PEPPER        (32+ caracteres al azar, no lo cambies nunca)
+#   npx wrangler secret put SETUP_TOKEN       (16+ caracteres, solo para /setup)
+#   npx wrangler secret put TURNSTILE_SECRET  (opcional)
+
+[observability]
+enabled = true

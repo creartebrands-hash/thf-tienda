@@ -1,0 +1,279 @@
+<div id="progPage" data-prog="a">
+
+<section class="pg-hero" aria-label="Programas THF">
+  <svg class="pg-rose" viewBox="0 0 100 100" aria-hidden="true"><use href="#rose"/></svg>
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Ruta"><a href="/">Inicio</a><span aria-hidden="true">/</span><span>Programas</span></nav>
+    <h1>Gana con THF <span class="script">a tu manera</span></h1>
+    <p class="lede">Dos programas distintos para generar ingresos con joyería hecha a mano. Tú eliges cómo participar. Nosotros cobramos, elaboramos y enviamos.</p>
+    <div class="pg-pick">
+      <button class="a" data-tab="a" data-scroll><span class="L">A</span><span><strong>Embajadoras</strong><small>Compartes tu enlace o código y ganas una comisión por cada venta.</small></span><span class="go" aria-hidden="true">→</span></button>
+      <button class="b" data-tab="b" data-scroll><span class="L">B</span><span><strong>Emprendedoras</strong><small>Abres tu propia tienda, pones tu precio y ganas la diferencia.</small></span><span class="go" aria-hidden="true">→</span></button>
+    </div>
+    <p class="pg-hint">¿No sabes cuál elegir? <a href="#test">Responde 3 preguntas</a> · Puedes unirte a los dos.</p>
+  </div>
+</section>
+
+<section class="quiz-sec" id="test" aria-label="Test para elegir programa">
+  <div class="wrap">
+    <div class="quiz" id="quiz">
+      <p class="eyebrow">Test rápido · 20 segundos</p>
+      <h2>¿Qué programa es para ti?</h2>
+      <div class="qdots" aria-hidden="true"><i class="on"></i><i></i><i></i></div>
+      <div class="q" data-q="0"><p>¿Tienes gente que te sigue en redes o en grupos de WhatsApp?</p>
+        <div class="opts"><button data-v="a"><b>Sí, me gusta recomendar</b><small>Comparto cosas que me gustan</small></button><button data-v="b"><b>Poca, quiero algo propio</b><small>Prefiero construir mi espacio</small></button></div></div>
+      <div class="q" data-q="1" hidden><p>¿Te gustaría tener una tienda con tu nombre?</p>
+        <div class="opts"><button data-v="a"><b>No, solo quiero compartir</b><small>Sin administrar nada</small></button><button data-v="b"><b>Sí, mi propia tienda</b><small>Con mi foto, mi marca y mis redes</small></button></div></div>
+      <div class="q" data-q="2" hidden><p>¿Quieres decidir el precio de venta?</p>
+        <div class="opts"><button data-v="a"><b>Me da igual</b><small>Que el precio lo ponga THF</small></button><button data-v="b"><b>Sí, quiero poner mi precio</b><small>Y decidir cuánto gano</small></button></div></div>
+      <div class="quiz-result" id="quizResult" hidden>
+        <p class="eyebrow" style="color:var(--oro-texto)">Te recomendamos</p>
+        <h3 id="quizName"></h3>
+        <p id="quizWhy"></p>
+        <div class="row"><button class="btn btn-solid" id="quizGo" data-go="a">Ver programa</button><button class="btn btn-ghost" id="quizAgain">Repetir</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="switch-wrap" id="switch">
+  <div class="switch" role="tablist" aria-label="Elige un programa">
+    <button role="tab" data-tab="a" aria-selected="true" aria-controls="embajadoras"><i>A</i>Embajadoras</button>
+    <button role="tab" data-tab="b" aria-selected="false" aria-controls="emprendedoras"><i>B</i>Emprendedoras</button>
+  </div>
+</div>
+
+<!-- ================= PROGRAMA A ================= -->
+<section class="ppane" data-pane="a" id="embajadoras" role="tabpanel" aria-label="Programa A: Embajadoras">
+  <div class="wrap">
+    <div class="pp-intro">
+      <div class="t"><p class="eyebrow">Programa A</p><h2>Embajadoras <span class="script">comparte y gana</span></h2></div>
+      <p class="d">Recomiendas las piezas con tu enlace, tu código o tu QR. Cada vez que alguien compra con ellos, ganas una comisión. No vendes, no cobras y no envías nada.</p>
+    </div>
+    <div class="keys">
+      <div><b>{{commission}} %</b><span>de comisión por cada venta</span></div>
+      <div><b>0</b><span>piezas en inventario: no compras nada</span></div>
+      <div><b>2 pagos</b><span>al mes, en bolívares, por Pago Móvil o transferencia</span></div>
+    </div>
+
+    <div class="block">
+      <div class="block-h"><h3>Así funciona</h3><p>Toca cada paso o mira cómo se ve en tu teléfono.</p></div>
+      <div class="tour">
+        <div>
+          <ol class="tour-steps" role="tablist" aria-label="Pasos del programa">
+            <li><button class="tour-step" role="tab"><span class="n">1</span><span><b>Postula</b><span>Desde tu teléfono, en menos de 3 minutos. Revisamos tus redes.</span></span></button></li>
+            <li><button class="tour-step" role="tab"><span class="n">2</span><span><b>Recibe tu kit</b><span>Tu enlace, tu código y tu QR, con fotos y textos listos.</span></span></button></li>
+            <li><button class="tour-step" role="tab"><span class="n">3</span><span><b>Comparte</b><span>En historias, estados o grupos. Tu gente compra con tu código.</span></span></button></li>
+            <li><button class="tour-step" role="tab"><span class="n">4</span><span><b>Gana</b><span>Ves cada venta y tu comisión en tu panel, al momento.</span></span></button></li>
+          </ol>
+          <div class="tour-bar" aria-hidden="true"><i></i></div>
+        </div>
+        <div class="phone" aria-hidden="true"><div class="phone-scr">
+          <div class="screen"><div class="s-top"><span>Postulación</span><span>1 de 3</span></div>
+            <div class="s-card"><div class="s-h">Únete como embajadora</div><div class="s-line">María Pérez</div><div class="s-line">Porlamar</div><div class="s-line">instagram.com/maria.joyas</div><div class="s-line">2.000 a 10.000 seguidores</div><div class="s-btn">Enviar solicitud</div></div>
+            <p class="s-url">Menos de 3 minutos</p></div>
+          <div class="screen"><div class="s-top"><span>Tu kit</span><b>¡Aprobada!</b></div>
+            <div class="s-card"><div class="s-qr">{{qr}}</div><div class="s-code">MARIA10</div><span class="s-chip" style="justify-self:center">thf…/?ref=maria</span><div class="s-btn gold">Copiar mi enlace</div></div>
+            <p class="s-url">También: fotos y textos listos para publicar</p></div>
+          <div class="screen" style="padding:0"><div class="s-story"><div class="s-bars"><i></i><i></i><i></i></div><img src="/media/seed/p-marea-rosa.webp" alt=""><div class="tag">Marea Rosa<small>Pídela con mi código MARIA10</small></div></div></div>
+          <div class="screen"><div class="s-top"><span>Mi panel</span><b>Hola, María</b></div>
+            <div class="s-notif"><span class="ic">✓</span><span>Venta · Ocaso</span><b>+$3,80</b></div>
+            <div class="s-notif"><span class="ic">✓</span><span>Venta · Marea Rosa</span><b>+$3,80</b></div>
+            <div class="s-notif"><span class="ic">✓</span><span>Venta · Luz y Fe</span><b>+$3,60</b></div>
+            <div class="s-card"><div class="s-row"><span>Camino a tu pago</span><b>$240 / {{payout}}</b></div><div class="s-prog"><i></i></div><div class="s-row"><span>Próximo pago</span><b>20/10</b></div></div></div>
+        </div></div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-h"><h3>Calcula tu comisión</h3><p>Mueve las barras. Es un ejemplo ilustrativo, no una promesa de ingresos.</p></div>
+      <div class="simx">
+        <div class="simx-in">
+          <div class="sim-row"><label for="aSales">Piezas vendidas con tu código al mes <output id="aSalesO">10</output></label><input type="range" id="aSales" min="1" max="60" value="10"></div>
+          <div class="coins" id="aCoins" aria-hidden="true"></div>
+          <div class="sim-row"><label for="aPrice">Precio promedio por pieza <output id="aPriceO">$30</output></label><input type="range" id="aPrice" min="20" max="60" value="30"></div>
+          <p class="rng-note">La comisión se calcula sobre el valor de los productos, sin envío. Los pedidos al mayor no generan comisión.</p>
+        </div>
+        <div class="simx-out">
+          <span class="eyebrow">Tu comisión estimada al mes</span>
+          <div class="big" id="aOut">$30,00</div>
+          <div class="paybar"><div class="track"><i id="aBar"></i></div><p id="aBarL"></p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-h"><h3>Cuándo y cómo te pagamos</h3><p>Todo queda a la vista en tu panel: cada venta, su comisión y la fecha de pago.</p></div>
+      <div class="payrow">
+        <div class="paycal-wrap"><div class="cal-title">Octubre 2026 <small>Ejemplo de calendario</small></div><div class="paycal"></div></div>
+        <ol class="paysteps">
+          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M5 8h14l-1.2 12H6.2L5 8z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg></span><div><b>Se vende con tu código</b><span>La venta cuenta cuando se entrega y pasan 7 días sin devolución.</span></div></li>
+          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M4 18h16M6 14h12M8 10h8M10 6h4"/></svg></span><div><b>Acumulas</b><span>Tu pago se libera al llegar a {{payout}} en ventas. Lo que falta se guarda, no se pierde.</span></div></li>
+          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="4" y="5" width="16" height="15"/><path d="M4 10h16M9 3v4M15 3v4"/></svg></span><div><b>Corte</b><span>Los días 15 y último de cada mes.</span></div></li>
+          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="12" r="8"/><path d="M12 8v8M9.5 10.5c0-1.2 1.1-2 2.5-2s2.5.7 2.5 1.8c0 2.4-5 1.4-5 3.9 0 1.1 1.1 1.8 2.5 1.8s2.5-.8 2.5-2"/></svg></span><div><b>Cobras</b><span>5 días después del corte, en bolívares, por Pago Móvil o transferencia.</span></div></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-h"><h3>Quién hace qué</h3></div>
+      <div class="who">
+        <div class="you"><h4><i>Tú</i>Tú</h4><ul><li>Compartes tu enlace, tu código o tu QR</li><li>Recomiendas las piezas a tu gente</li><li>Sigues tus ventas en tu panel</li></ul></div>
+        <div class="us"><h4><i>T</i>THF</h4><ul><li>Atiende al cliente por el WhatsApp oficial</li><li>Cobra, elabora y envía cada pieza</li><li>Te paga tu comisión cada quincena</li></ul></div>
+        <div class="never"><h4><i>✕</i>Nunca</h4><ul><li>Recibes pagos de clientes por las piezas</li><li>Compras inventario ni pagas por vender</li><li>Ganas por reclutar a otras personas</li></ul></div>
+      </div>
+    </div>
+
+    <div class="pp-cta">
+      <div class="checker" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      <div><h3>¿Lista para <span class="script">compartir?</span></h3><p>Postula en menos de 3 minutos. Te respondemos por WhatsApp.</p></div>
+      <a class="btn btn-gold" href="#embajadoras" data-apply="embajadora">Postularme como embajadora <span class="arr"></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROGRAMA B ================= -->
+<section class="ppane" data-pane="b" id="emprendedoras" role="tabpanel" aria-label="Programa B: Emprendedoras" hidden>
+  <div class="wrap">
+    <div class="pp-intro">
+      <div class="t"><p class="eyebrow">Programa B</p><h2>Emprendedoras <span class="script">tu tienda, nosotros enviamos</span></h2></div>
+      <p class="d">Eliges piezas del catálogo mayorista, pones tu precio y las publicas en tu propia tienda con tu nombre. Tu cliente paga a THF y nosotros elaboramos y enviamos. Tu ganancia es la diferencia.</p>
+    </div>
+    <div class="keys">
+      <div><b>Tu precio</b><span>dentro de un rango por pieza</span></div>
+      <div><b>Tu tienda</b><span>con tu nombre, tu foto y tus redes</span></div>
+      <div><b>0 envíos</b><span>THF elabora, empaca y despacha</span></div>
+    </div>
+
+    <div class="block">
+      <div class="block-h"><h3>Así funciona</h3><p>Toca cada paso o mira cómo se ve en tu teléfono.</p></div>
+      <div class="tour">
+        <div>
+          <ol class="tour-steps" role="tablist" aria-label="Pasos del programa">
+            <li><button class="tour-step" role="tab"><span class="n">1</span><span><b>Elige tus piezas</b><span>Ves el costo, el precio sugerido y cuánto ganas en cada una.</span></span></button></li>
+            <li><button class="tour-step" role="tab"><span class="n">2</span><span><b>Abre tu tienda</b><span>Con tu nombre, tu foto y tus redes, en una dirección propia.</span></span></button></li>
+            <li><button class="tour-step" role="tab"><span class="n">3</span><span><b>Tu cliente compra</b><span>El pedido llega al WhatsApp oficial de THF, con tu tienda anotada.</span></span></button></li>
+            <li><button class="tour-step" role="tab"><span class="n">4</span><span><b>Cobra tu ganancia</b><span>Precio de venta menos costo, pieza por pieza, cada quincena.</span></span></button></li>
+          </ol>
+          <div class="tour-bar" aria-hidden="true"><i></i></div>
+        </div>
+        <div class="phone" aria-hidden="true"><div class="phone-scr">
+          <div class="screen"><div class="s-top"><span>Catálogo mayorista</span><span>24 piezas</span></div>
+            <div class="s-card"><div class="s-prod"><img src="/media/seed/p-marea-rosa.webp" alt=""><div><div class="s-h">Marea Rosa</div><span style="color:var(--gris)">Set collar + pulsera</span></div></div>
+              <div class="s-tri"><div><small>Costo</small><b>$12</b></div><div><small>Sugerido</small><b>$30</b></div><div class="g"><small>Ganas</small><b>$16</b></div></div>
+              <div class="s-btn">Añadir a mi tienda</div></div>
+            <p class="s-url">Precio permitido: $24 a $45</p></div>
+          <div class="screen"><div class="s-top"><span>Mi tienda</span><b>/e/maria</b></div>
+            <div class="s-store-h"><span class="s-ava">M</span><div><div class="s-h" style="font-size:1.1rem">Joyas de María</div><span style="color:var(--gris);font-size:.62rem;letter-spacing:.14em;text-transform:uppercase">Piezas THF</span></div></div>
+            <div class="s-grid"><img src="/media/seed/p-ocaso.webp" alt=""><img src="/media/seed/p-marea-rosa.webp" alt=""><img src="/media/seed/p-verde-manglar.webp" alt=""><img src="/media/seed/p-luz-y-fe.webp" alt=""></div>
+            <div class="s-btn gold">Compartir mi tienda</div></div>
+          <div class="screen"><div class="s-top"><span>WhatsApp oficial</span><b>THF</b></div>
+            <div class="s-chat"><div class="s-bub me">Pedido THF-2026-000128<br>Marea Rosa × 1 · $28,00<br>Tienda: Joyas de María</div><div class="s-bub">¡Gracias! Te enviamos los datos de pago de THF y la fecha de entrega.</div></div>
+            <div class="s-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/></svg>THF cobra, elabora y envía</div></div>
+          <div class="screen"><div class="s-top"><span>Ganancias</span><b>Quincena</b></div>
+            <div class="s-card"><div class="s-row"><span>Marea Rosa · $28 − $12</span><b>$16,00</b></div><div class="s-row"><span>Ocaso · $30 − $13</span><b>$17,00</b></div><div class="s-row"><span>Verde Manglar · $22 − $9</span><b>$13,00</b></div><div class="s-row tot"><span>Total</span><span>$46,00</span></div></div>
+            <div class="s-btn gold">Pago Móvil · en Bs.</div></div>
+        </div></div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-h"><h3>Calcula tu ganancia</h3><p>Elige una pieza, pon tu precio y cuántas vendes. Ejemplo ilustrativo con costos de muestra.</p></div>
+      <div class="simx">
+        <div class="simx-in">
+          <div class="picks" id="bPick" role="group" aria-label="Elige una pieza"></div>
+          <div class="sim-row"><label for="bPrice">Tu precio de venta <output id="bPriceO">$28</output></label><input type="range" id="bPrice" min="24" max="45" value="28"><span class="rng-note" id="bRange"></span></div>
+          <div class="sim-row"><label for="bQty">Piezas vendidas al mes <output id="bQtyO">11</output></label><input type="range" id="bQty" min="1" max="40" value="11"></div>
+        </div>
+        <div class="simx-out">
+          <span class="eyebrow">Tu ganancia estimada al mes</span>
+          <div class="big" id="bOut">$176,00</div>
+          <p id="bPerTxt"></p>
+          <div class="split" aria-hidden="true"><div class="c" id="bCost"><span id="bCostL"></span></div><div class="g" id="bGain"><span id="bGainL"></span></div></div>
+          <div class="paybar"><div class="track"><i id="bBar"></i></div><p id="bBarL"></p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-h"><h3>Cuándo y cómo te pagamos</h3><p>Mismo calendario que Embajadoras, con tu propio saldo y tu propio panel.</p></div>
+      <div class="payrow">
+        <div class="paycal-wrap"><div class="cal-title">Octubre 2026 <small>Ejemplo de calendario</small></div><div class="paycal"></div></div>
+        <ol class="paysteps">
+          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M5 8h14l-1.2 12H6.2L5 8z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg></span><div><b>Se vende en tu tienda</b><span>La venta cuenta cuando se entrega y pasan 7 días sin devolución.</span></div></li>
+          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M4 18h16M6 14h12M8 10h8M10 6h4"/></svg></span><div><b>Acumulas</b><span>Tu pago se libera al llegar a {{payout}} en ventas. El envío no entra en la cuenta.</span></div></li>
+          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="4" y="5" width="16" height="15"/><path d="M4 10h16M9 3v4M15 3v4"/></svg></span><div><b>Corte</b><span>Los días 15 y último de cada mes.</span></div></li>
+          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="12" r="8"/><path d="M12 8v8M9.5 10.5c0-1.2 1.1-2 2.5-2s2.5.7 2.5 1.8c0 2.4-5 1.4-5 3.9 0 1.1 1.1 1.8 2.5 1.8s2.5-.8 2.5-2"/></svg></span><div><b>Cobras</b><span>5 días después del corte, en bolívares, por Pago Móvil o transferencia.</span></div></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-h"><h3>Quién hace qué</h3></div>
+      <div class="who">
+        <div class="you"><h4><i>Tú</i>Tú</h4><ul><li>Eliges las piezas y pones tu precio</li><li>Personalizas tu tienda y la compartes</li><li>Atraes clientes con tu marca</li></ul></div>
+        <div class="us"><h4><i>T</i>THF</h4><ul><li>Recibe el pedido y cobra por el WhatsApp oficial</li><li>Elabora, empaca y envía al cliente</li><li>Te paga tu ganancia cada quincena</li></ul></div>
+        <div class="never"><h4><i>✕</i>Nunca</h4><ul><li>Recibes pagos de clientes por las piezas</li><li>Cambias fotos, medidas o materiales de las piezas</li><li>Vendes por debajo del precio mínimo</li></ul></div>
+      </div>
+    </div>
+
+    <div class="pp-cta">
+      <div class="checker" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      <div><h3>¿Lista para tu <span class="script">tienda?</span></h3><p>Postula en menos de 3 minutos. Te respondemos por WhatsApp.</p></div>
+      <a class="btn btn-gold" href="#emprendedoras" data-apply="emprendedora">Postularme como emprendedora <span class="arr"></span></a>
+    </div>
+  </div>
+</section>
+
+<section class="compare-sec" aria-label="Comparativa de programas">
+  <div class="wrap">
+    <div class="block-h"><h3 style="font-size:var(--t-h2)">Diferencias <span class="script" style="color:var(--oro-texto);font-size:.7em">en 10 segundos</span></h3><p>Son programas separados. Puedes unirte a uno o a los dos, con una sola cuenta.</p></div>
+    <div class="tablewrap">
+      <table class="ctable">
+        <thead><tr><th scope="col"><span class="sr">Aspecto</span></th><th scope="col">Embajadoras</th><th scope="col">Emprendedoras</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Qué haces</th><td>Compartes tu enlace, código o QR</td><td>Publicas tu propia tienda</td></tr>
+          <tr><th scope="row">Cómo ganas</th><td><b>{{commission}} %</b> del valor de los productos</td><td><b>Tu precio − costo</b> de cada pieza</td></tr>
+          <tr><th scope="row">Precio de venta</th><td>Lo fija THF</td><td>Lo fijas tú, dentro de un rango</td></tr>
+          <tr><th scope="row">Tienda propia</th><td>No</td><td>Sí, con tu nombre</td></tr>
+          <tr class="same"><th scope="row">Inventario</th><td>No necesitas</td><td>No necesitas</td></tr>
+          <tr class="same"><th scope="row">Envíos</th><td>Los hace THF</td><td>Los hace THF</td></tr>
+          <tr class="same"><th scope="row">Cobro al cliente</th><td>Solo THF, por el WhatsApp oficial</td><td>Solo THF, por el WhatsApp oficial</td></tr>
+          <tr class="same"><th scope="row">Tu pago</th><td>Quincenal, al llegar a {{payout}} en ventas</td><td>Quincenal, al llegar a {{payout}} en ventas</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="cross" aria-label="Otras opciones">
+  <div class="wrap">
+    <h2>¿No quieres unirte <span class="script">a un programa?</span></h2>
+    <div class="cross-grid">
+      <a href="/caja-de-joyeria"><span class="L">24</span><span><strong>Caja de joyería</strong><small>Compra directa: 12 collares y 12 pulseras para revender, regalar o usar.</small></span><span class="go" aria-hidden="true">→</span></a>
+      <a href="/joyeria-personalizada"><span class="L">✦</span><span><strong>Joyería personalizada</strong><small>Diseños a medida para tu marca o para ti.</small></span><span class="go" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="programas" aria-label="Confianza y preguntas" style="padding-block:clamp(60px,9vh,110px)">
+  <div class="wrap">
+    <div class="trust rv">
+      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M24 4l16 6v12c0 10-7 18-16 22C15 40 8 32 8 22V10l16-6z"/><path d="M17 24l5 5 9-10"/></svg>
+      <div><h4>Solo THF cobra</h4><p>Todos los pedidos se pagan por el WhatsApp oficial de la marca. Ninguna embajadora ni emprendedora recibe pagos. Si alguien te pide que le pagues a una persona, no lo hagas.</p></div>
+      <div class="num">WhatsApp oficial<br><span style="color:var(--blanco);font-size:1.1rem">{{wa}}</span></div>
+    </div>
+
+    <div class="faq rv">
+      <h3>Preguntas claras</h3>
+      <details><summary>¿Esto es un esquema piramidal?</summary><p>No. Solo ganas por piezas vendidas a clientes reales. No ganas por invitar ni reclutar a otras personas, y cada venta tiene su comisión o ganancia a la vista en tu panel.</p></details>
+      <details><summary>¿Cuánto voy a ganar?</summary><p>Depende de lo que vendas. No prometemos ingresos. El simulador solo muestra cómo se calcula: en Embajadoras, un porcentaje del valor de los productos; en Emprendedoras, tu precio menos el costo.</p></details>
+      <details><summary>¿Tengo que comprar mercancía o enviar paquetes?</summary><p>No. Las piezas se elaboran bajo pedido en nuestro taller y THF las despacha directamente al cliente.</p></details>
+      <details><summary>¿Cuándo y cómo me pagan?</summary><p>Cuando acumulas el mínimo en ventas elegibles, tu saldo entra en el siguiente corte quincenal (días 15 y último). Pagamos 5 días después, en bolívares, por Pago Móvil o transferencia, con la tasa del día de pago. En tu panel ves cada movimiento y la fecha de cada pago.</p></details>
+      <details><summary>¿Puedo estar en los dos programas?</summary><p>Sí. Con una sola cuenta, pero cada programa tiene su propia solicitud, sus términos, su saldo y su panel.</p></details>
+      <details><summary>¿Qué evalúan de mis redes?</summary><p>Revisamos tus canales (Instagram, TikTok, Facebook, grupos de WhatsApp u otros), cómo interactúa tu audiencia y la afinidad con la marca. No exigimos una cifra mínima de seguidores. Debes ser mayor de 18 años.</p></details>
+    </div>
+  
+  </div>
+</section>
+</div>

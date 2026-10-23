@@ -1,0 +1,130 @@
+<div id="cajaPage">
+<section class="box-hero" aria-label="Caja de joyería">
+  <div class="wrap">
+    <div class="box-copy">
+      <nav class="crumbs" aria-label="Ruta"><a href="/">Inicio</a><span aria-hidden="true">/</span><span>Caja de joyería</span></nav>
+      <p class="eyebrow">Caja de joyería THF</p>
+      <h1>24 piezas <span class="script">en una sola caja</span></h1>
+      <p class="lede">Doce collares y doce pulseras hechos a mano, con cadenas con baño de oro 18k. Cada pieza llega en su propio sobre, lista para vender, regalar o estrenar.</p>
+      <div class="price-xl"><b>{{boxUnit}}</b><span>USD</span><s>{{boxPrice}}</s><em>−{{boxOff}} %</em></div>
+      <p class="per-piece">Sale a <b>{{boxPer}} por pieza</b></p>
+      <div class="box-chips">
+        <div><b>12</b><span>collares variados</span></div>
+        <div><b>12</b><span>pulseras variadas</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/></svg><span>Cadenas con baño de oro 18k</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M7 11V6a2 2 0 0 1 4 0v5M11 10V4.5a2 2 0 0 1 4 0V11M15 10V6.5a2 2 0 0 1 4 0V14a7 7 0 0 1-7 7h-1a6 6 0 0 1-5.4-3.3L3.4 13a1.8 1.8 0 0 1 3.1-1.7L7 12"/></svg><span>Hecho a mano en nuestro taller</span></div>
+      </div>
+      <div class="box-buy">
+        <div class="qty"><button type="button" aria-label="Una caja menos" data-bq="-1">−</button><input id="boxQty" type="number" min="1" max="20" value="1" aria-label="Cantidad de cajas"><button type="button" aria-label="Una caja más" data-bq="1">+</button></div>
+        <button class="btn btn-solid" id="boxAdd">Añadir al pedido <span class="arr"></span></button>
+        <button class="textlink" id="boxAsk">Preguntar por WhatsApp</button>
+      </div>
+      <p class="note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/></svg>Compra directa a THF. No necesitas unirte a ningún programa. El pago se coordina solo por el WhatsApp oficial.</p>
+    </div>
+    <div class="box-media">
+      <div class="vframe">
+        <video id="boxVideo" src="/media/seed/caja.mp4" poster="/media/seed/caja-poster.webp" autoplay muted loop playsinline preload="metadata" aria-label="Video: se abre la caja y se muestran collares y pulseras en sus sobres"></video>
+        <button class="vbtn" id="boxVbtn" aria-label="Pausar video"><svg viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="5" width="4" height="14"/><rect x="14" y="5" width="4" height="14"/></svg></button>
+      </div>
+      <div class="vframe-checker" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      <div class="vstamp" aria-hidden="true"><span><b>24</b>piezas<br>hechas a mano</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="uses" aria-label="Usos de la caja">
+  <div class="wrap">
+    <div class="uses-head">
+      <p class="eyebrow">Una caja, tres caminos</p>
+      <h2>¿Para qué <span class="script">es tu caja?</span></h2>
+    </div>
+    <div class="utabs" role="tablist" aria-label="Usos de la caja">
+      <button class="utab" role="tab" data-use="emprender" aria-selected="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M4 19h16M6 15l4-4 3 3 5-6"/><path d="M15 8h3v3"/></svg>Para emprender</button>
+      <button class="utab" role="tab" data-use="regalar" aria-selected="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><rect x="4" y="9" width="16" height="11"/><path d="M3 9h18M12 9v11M12 9c-2-4-6-4-6-1.5S12 9 12 9zM12 9c2-4 6-4 6-1.5S12 9 12 9z"/></svg>Para regalar</button>
+      <button class="utab" role="tab" data-use="ti" aria-selected="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>Para ti</button>
+    </div>
+
+    <div class="upane" data-upane="emprender" role="tabpanel">
+      <div class="upane-media"><img src="/media/seed/caja-abierta.webp" alt="Caja abierta con collares en sobres individuales" loading="lazy"></div>
+      <div class="upane-copy">
+        <h3>Empieza tu propio negocio de accesorios</h3>
+        <p>La caja es tuya: vende cada pieza a tu precio, a tu manera. Calcula en cuántas ventas recuperas lo invertido.</p>
+        <div class="resale" aria-label="Calculadora de reventa">
+          <div class="sim-row"><label for="rPrice">Precio al que vendes cada pieza <output id="rPriceO">$12</output></label><input type="range" id="rPrice" min="7" max="30" value="12"></div>
+          <div class="sim-row"><label for="rQty">Piezas que vendes <output id="rQtyO">24</output></label><input type="range" id="rQty" min="0" max="24" value="24"></div>
+          <div class="dots24" id="dots24" aria-hidden="true"></div>
+          <div class="legend"><span class="s"><i></i>Recuperas tu inversión</span><span class="p"><i></i>Ganancia</span><span><i></i>Por vender</span></div>
+          <div class="resale-out">
+            <div><small>Vendes</small><b id="rSales">$288</b></div>
+            <div><small>Inversión</small><b>$134</b></div>
+            <div class="g" id="rGainBox"><small>Ganancia</small><b id="rGain">$154</b></div>
+          </div>
+          <p class="resale-msg" id="rMsg"></p>
+          <p class="rng-note">Ejemplo ilustrativo, no es una promesa de ingresos. Esta compra no forma parte de los programas de Embajadoras o Emprendedoras.</p>
+        </div>
+      </div>
+    </div>
+    <div class="upane" data-upane="regalar" role="tabpanel" hidden>
+      <div class="upane-media"><img src="/media/seed/caja-tarjeta.webp" alt="Caja con tarjeta de agradecimiento y piezas en sobres" loading="lazy"></div>
+      <div class="upane-copy">
+        <h3>24 detalles listos para entregar</h3>
+        <p>Cada collar y cada pulsera viene en su propio sobre transparente con tarjeta. Sacas uno, lo entregas, y la caja sigue ordenada.</p>
+        <div class="ideas"><span>Damas de honor</span><span>Fin de año del equipo</span><span>Clientas especiales</span><span>Quince años</span><span>Día de las madres</span><span>Graduaciones</span></div>
+        <a class="btn btn-ghost" href="#comprar" data-scrolltop style="justify-self:start">Añadir la caja al pedido <span class="arr"></span></a>
+      </div>
+    </div>
+    <div class="upane" data-upane="ti" role="tabpanel" hidden>
+      <div class="upane-media"><img src="/media/seed/caja-manos.webp" alt="Manos sosteniendo un collar de perlas y una pulsera en sus sobres" loading="lazy"></div>
+      <div class="upane-copy">
+        <h3>Una pieza distinta para cada ocasión</h3>
+        <p>Combina collares y pulseras entre sí, cambia según tu ropa y guarda algunas para regalar cuando quieras.</p>
+        <div class="ideas"><span>Para el día a día</span><span>Para una salida</span><span>Para combinar en capas</span></div>
+        <a class="btn btn-ghost" href="#comprar" data-scrolltop style="justify-self:start">Añadir la caja al pedido <span class="arr"></span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contents" aria-label="Contenido de la caja">
+  <div class="wrap">
+    <div class="sec-h"><div class="t"><p class="eyebrow">Qué trae</p><h2>Dentro <span class="script">de la caja</span></h2></div><p>Los modelos son variados. Si buscas diseños específicos, mira la joyería personalizada.</p></div>
+    <div class="contents-grid">
+      <article class="cbox"><div class="cbox-media"><img src="/media/seed/caja-collar.webp" alt="Collar con dije y perla en su sobre" loading="lazy"></div><div class="cbox-in"><b>12</b><h3>collares variados</h3><p>Cadenas con baño de oro 18k, con dijes, perlas o piedras.</p></div></article>
+      <article class="cbox"><div class="cbox-media"><img src="/media/seed/caja-pulseras.webp" alt="Pulseras de perlas de colores" loading="lazy"></div><div class="cbox-in"><b>12</b><h3>pulseras variadas</h3><p>En distintos colores y estilos para combinar.</p></div></article>
+      <article class="cbox"><div class="cbox-media"><img src="/media/seed/caja-cerrada.webp" alt="Caja kraft cerrada con tarjeta" loading="lazy"></div><div class="cbox-in"><b>1</b><h3>caja de regalo</h3><p>Caja kraft con cada pieza en su sobre y tarjeta de agradecimiento.</p></div></article>
+    </div>
+    <div class="spec-row">
+      <div><small>Material</small><span>Cadenas con baño de oro 18k</span></div>
+      <div><small>Hecho</small><span>A mano, en nuestro taller</span></div>
+      <div><small>Elaboración</small><span>Bajo pedido · {{lead}}</span></div>
+      <div><small>Entrega</small><span>Delivery en la isla y envíos nacionales</span></div>
+    </div>
+    <div class="reel" aria-label="Fotos de la caja">
+      <figure><img src="/media/seed/caja-cerrada.webp" alt="" loading="lazy"></figure>
+      <figure><img src="/media/seed/caja-tarjeta.webp" alt="" loading="lazy"></figure>
+      <figure><img src="/media/seed/caja-abierta.webp" alt="" loading="lazy"></figure>
+      <figure><img src="/media/seed/caja-collar.webp" alt="" loading="lazy"></figure>
+      <figure><img src="/media/seed/caja-manos.webp" alt="" loading="lazy"></figure>
+      <figure><img src="/media/seed/caja-foto.webp" alt="" loading="lazy"></figure>
+    </div>
+    <div class="faq">
+      <h3>Preguntas sobre la caja</h3>
+      <details><summary>¿Tengo que unirme a un programa para comprarla?</summary><p>No. Es una compra directa a THF. Puedes comprarla para revender, regalar o usar, sin postular a nada.</p></details>
+      <details><summary>Si la compro para revender, ¿cómo cobro?</summary><p>Las piezas pasan a ser tuyas, así que las vendes y cobras a tu manera. Es distinto del Programa de Emprendedoras, donde no manejas inventario y THF cobra cada pedido.</p></details>
+      <details><summary>¿Puedo elegir los modelos?</summary><p>La caja trae modelos variados. Si necesitas diseños específicos, te los hacemos con la joyería personalizada.</p></details>
+      <details><summary>¿De qué material son las cadenas?</summary><p>Las cadenas tienen baño de oro 18k.</p></details>
+      <details><summary>¿Cómo pago?</summary><p>Añade la caja a tu pedido y finaliza por WhatsApp. Coordinamos el pago solo por el WhatsApp oficial de THF: Pago Móvil, transferencia, Zelle, Binance, PayPal o efectivo en la isla.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="cross" aria-label="Otras opciones">
+  <div class="wrap">
+    <h2>¿Buscas <span class="script">otra forma?</span></h2>
+    <div class="cross-grid">
+      <a href="/programas"><span class="L">A·B</span><span><strong>Programas</strong><small>Gana sin comprar inventario: comparte tu enlace o abre tu tienda.</small></span><span class="go" aria-hidden="true">→</span></a>
+      <a href="/joyeria-personalizada"><span class="L">✦</span><span><strong>Joyería personalizada</strong><small>Diseños a medida para tu marca o para ti.</small></span><span class="go" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+</div>

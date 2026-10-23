@@ -1,0 +1,4 @@
+# Copia este archivo como .dev.vars para usar "npx wrangler dev"
+THF_PEPPER=cambia-esto-por-32-caracteres-al-azar-0123456789
+SETUP_TOKEN=cambia-esto-123456
+NO_EDGE_CACHE=1

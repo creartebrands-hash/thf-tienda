@@ -1,0 +1,26 @@
+{
+  "name": "thf-tienda",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "THF · tienda, panel y API. Corre en Cloudflare Workers + D1 (gratis) o en Vercel + Supabase (PostgreSQL), con el mismo código.",
+  "scripts": {
+    "dev": "node dev/server.mjs 8787",
+    "dev:cf": "wrangler dev",
+    "test": "node --test --no-warnings tests/*.test.mjs",
+    "test:pg": "THF_DB=pg node --test --no-warnings --test-concurrency=1 tests/*.test.mjs",
+    "deploy": "wrangler deploy",
+    "build:data": "python3 dev/build_generated.py",
+    "build:guides": "python3 dev/guides/build_guides.py"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=22.5"
+  },
+  "dependencies": {
+    "pg": "^8.13.1",
+    "@vercel/functions": "^1.5.2"
+  }
+}

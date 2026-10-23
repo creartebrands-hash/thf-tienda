@@ -1,0 +1,15 @@
+node_modules/
+.wrangler/
+dev/.data/
+.dev.vars
+*.log
+
+# Claves y bases locales
+.env
+.env.*
+!.env.example
+.dev.vars
+dev/.data/
+*.sqlite
+*.dump
+*.crt

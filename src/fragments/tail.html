@@ -1,0 +1,53 @@
+<!-- WhatsApp flotante -->
+<button class="wa-float" id="waBtn" aria-label="Contacto por WhatsApp oficial" aria-expanded="false">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19l-4 1z"/><path d="M9 9.5c.3 2.5 2.4 4.6 5 5l1-1.2 2 .9-.4 1.6c-3.8.3-8-3.9-7.6-7.7L10.6 7.7l.9 2-1.2 1"/></svg>
+</button>
+<div class="wa-chat" id="waPop" role="dialog" aria-label="Chat por WhatsApp con THF" hidden>
+  <header class="wa-head">
+    <span class="wa-ava" aria-hidden="true">THF</span>
+    <div class="wa-who"><b>{{brand}}</b><small><i class="wa-dot" aria-hidden="true"></i>{{chatStatus}}</small></div>
+    <button class="wa-x" id="waClose" type="button" aria-label="Cerrar chat">✕</button>
+  </header>
+  <div class="wa-body" id="waBody">
+    <p class="wa-day">Hoy</p>
+    <div class="wa-msg in"><p>{{greeting}}</p><time class="wa-time"></time></div>
+    <div class="wa-quick" id="waQuick" role="group" aria-label="Respuestas rápidas">{{quick}}</div>
+  </div>
+  <form class="wa-input" id="waForm">
+    <label class="sr" for="waText">Escribe tu mensaje</label>
+    <textarea id="waText" rows="1" maxlength="500" placeholder="Escribe tu mensaje"></textarea>
+    <button class="wa-send" type="submit" aria-label="Enviar por WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.4 20.4 21 12 3.4 3.6 3.4 10l12.6 2-12.6 2z" fill="currentColor"/></svg></button>
+  </form>
+  <p class="wa-foot">Único número para pedidos y pagos: <span class="wa-num">{{wa}}</span>{{waDemo}} <button type="button" class="wa-copy" id="waCopy">Copiar</button></p>
+</div>
+
+<!-- Drawers -->
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="pd" aria-label="Ficha de la pieza" aria-hidden="true">
+  <div class="drawer-head"><span class="eyebrow">Ficha de la pieza</span><button class="x" data-close>Cerrar ✕</button></div>
+  <div class="drawer-body" id="pdBody"></div>
+</aside>
+<aside class="drawer" id="cart" aria-label="Carrito" aria-hidden="true">
+  <div class="drawer-head"><span class="eyebrow">Tu pedido</span><button class="x" data-close>Cerrar ✕</button></div>
+  <div class="drawer-body" id="cartBody"></div>
+  <div class="cart-foot" id="cartFoot"></div>
+</aside>
+<div class="modal" id="checkout" aria-hidden="true" role="dialog" aria-label="Finalizar pedido"><div class="modal-card" id="coCard"></div></div>
+<div class="modal" id="lookModal" aria-hidden="true" role="dialog" aria-label="Elegir piezas del look"><div class="modal-card"></div></div>
+<div class="modal" id="apply" aria-hidden="true" role="dialog" aria-label="Postulación"><div class="modal-card"></div></div>
+<div class="toast" id="toast" role="status"></div>
+<div class="cursor" id="cursor" aria-hidden="true"></div>
+
+<!-- Rosa de los vientos -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="rose" viewBox="0 0 100 100">
+    <g fill="none" stroke="currentColor" stroke-width=".8">
+      <circle cx="50" cy="50" r="46"/><circle cx="50" cy="50" r="40" stroke-dasharray="1 3"/><circle cx="50" cy="50" r="13"/>
+      <path d="M50 4 L56 44 L50 50 L44 44 Z M50 96 L44 56 L50 50 L56 56 Z M4 50 L44 44 L50 50 L44 56 Z M96 50 L56 56 L50 50 L56 44 Z"/>
+      <path d="M50 50 L18 18 M50 50 L82 18 M50 50 L18 82 M50 50 L82 82" stroke-width=".5"/>
+      <path d="M50 4 L56 44 L50 50 Z" fill="currentColor"/>
+    </g>
+    <text x="50" y="2.5" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="7" fill="currentColor">N</text>
+  </symbol>
+</svg>
+
